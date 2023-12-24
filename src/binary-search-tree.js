@@ -34,7 +34,6 @@ class BinarySearchTree {
 
   constructor() {
     this.rootElement = null;
-    this.arrayDebugger = [];
   }
 
   root() {
@@ -42,9 +41,6 @@ class BinarySearchTree {
   }
 
   add(data) {
-
-    this.arrayDebugger.push(data);
-
     if (this.rootElement === null) {
       this.rootElement = new Node(data);
       return; // для пустого дерева
